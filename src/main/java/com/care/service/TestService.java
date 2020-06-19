@@ -1,5 +1,7 @@
 package com.care.service;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,6 +20,22 @@ public class TestService {
 	
 	public void list(Model model,String num) {
 		model.addAttribute("list",dao.list(num));
+	}
+	
+	public void savedata(TestDTO dto) {
+		dao.save(dto);
+		
+		
+//		model.addAttribute("list",dao.list(num));
+	}
+	
+	public void updatepage(Model model,int num) {
+		model.addAttribute("up",dao.updatepage(num));
+	}
+	
+	
+	public void updatedata(TestDTO dto) {
+		dao.updatedata(dto);
 	}
 	
 	

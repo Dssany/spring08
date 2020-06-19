@@ -10,5 +10,10 @@
 	<select id="list" resultType="com.care.dto.TestDTO">
 		select * from mybatis_test where num=#{num}
 	</select>
-	
+	<insert id="save">
+		insert into mybatis_test (num,name,mydate) values(#{num},#{name},#{mydate})
+	</insert>
+	<update id="updatedata">
+		update mybatis_test set name=#{name},mydate=#{mydate} where num=#{num}
+	</update>
 </mapper>

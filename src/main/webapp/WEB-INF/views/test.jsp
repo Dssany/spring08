@@ -11,9 +11,11 @@
 
 <c:forEach items="${lists }" var="dto">
 	num : ${dto.num }<br>
-	name : ${dto.name }<br>
+	name : <a href="updatepage?num=${dto.num }">${dto.name }</a><br>
 	mydate : ${dto.mydate }<br><br>
 </c:forEach>
-
+	<a href="main">메인 페이지</a>&nbsp;&nbsp;
+	<a href="list">검색 페이지</a>&nbsp;&nbsp;
+	<a href="inputuser">등록 페이지</a>&nbsp;&nbsp;
 </body>
 </html>

@@ -11,6 +11,10 @@
 	번호 : ${list.num }<br>
 	이름 : ${list.name }<br>
 	날짜 ㅣ ${list.mydate }<br>
+	
+	<a href="main">메인 페이지</a>
+	<a href="input">검색 페이지</a>
+	<a href="inputuser">등록 페이지</a>
 <hr>
 </body>
 </html>

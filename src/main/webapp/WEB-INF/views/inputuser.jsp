@@ -6,12 +6,14 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body>input.jsp<br>
-	<form action="list">
-		검색번호 입력 : <input type="text" name="num"><br>
+<body>inputuser<br>
+	<form action="savedata">
+		번호 : <input type="text" name="num"><br>
+		이름 : <input type="text" name="name"><br>
+		날짜 : <input type="date" name="mydate"><br>
 		<input type="submit">
 	</form>
-	<a href="main">메인 페이지</a>&nbsp;&nbsp;
+	<a href="input">검색 페이지</a>&nbsp;&nbsp;
 	<a href="test">목록 페이지</a>&nbsp;&nbsp;
 	<a href="inputuser">등록 페이지</a>&nbsp;&nbsp;
 </body>
